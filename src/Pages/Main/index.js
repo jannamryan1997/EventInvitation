@@ -1,5 +1,5 @@
 import { React } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Outlet, Route, Routes } from 'react-router-dom';
 
 import { Header, Footer } from '../../Components';
 
@@ -12,10 +12,7 @@ export function Main() {
     <>
       <Header />
       <div className={style.router}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-        </Routes>
+        <Outlet/>
       </div>
       <Footer />
     </>

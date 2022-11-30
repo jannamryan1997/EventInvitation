@@ -19,10 +19,12 @@
 .row {
     display: flex;
 }
+.row_li{
+    margin-left: 20px;
+}
 
 .row_item {
     cursor: pointer;
-    margin-left: 20px;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -34,7 +36,7 @@
     background: #2658AA;
     border-radius: 70px;
     content: "";
-    display: block;
+    display: flex;
     width: 0;
     margin-top: 5px;
 }
