@@ -1,0 +1,42 @@
+.invitation_header_img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.invitatin__title {
+    color: #284042;
+    font-size: 80px;
+    font-weight: 600;
+    justify-content: center;
+    display: flex;
+    font-family: "Tangerine", serif;
+}
+.invitation__img_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.invitation__img_1_item,.invitation__img_2_item {
+    transform: rotate(356.05136248103577deg);
+   border-radius: var(--rd,5px);
+    box-shadow: var(--shd,0 1px 3px rgba(0,0,0,0.2));
+    background-color: rgba(var(--brd,var(--color_15)),var(--alpha-brd,1));
+    //border-style: solid;
+    border-color: rgba(var(--brd,var(--color_15)),var(--alpha-brd,1));
+    border-width: var(--brw,2px);
+    overflow: hidden;
+    padding: 30px;
+    width: 250px;
+    height: 350px;
+    background: white;
+}
+.invitation__img_2_item {
+    transform: rotate(11.88019deg);
+    margin-top: 16px;
+}
+.invitation_img_1,
+.invitation_img_2 {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
