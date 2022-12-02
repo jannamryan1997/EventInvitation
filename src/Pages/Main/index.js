@@ -1,9 +1,8 @@
 import { React } from 'react';
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 import { Header, Footer } from '../../Components';
 
-import { AboutUs, Home } from '../index';
 
 import style from './Main.module.css';
 

@@ -1,42 +1,108 @@
-.invitation_header_img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Dancing+Script&display=swap");
+
+.invitation__main {
+  background-image: url("../../../Assets/Images/image1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
+
 .invitatin__title {
-    color: #284042;
-    font-size: 80px;
-    font-weight: 600;
-    justify-content: center;
-    display: flex;
-    font-family: "Tangerine", serif;
+  color: #284042;
+  font-size: 80px;
+  font-weight: 600;
+  justify-content: center;
+  display: flex;
+  font-family: "Dancing Script", cursive;
+  margin: 50px 0 10px 0;
+}
+
+.invitatin__description {
+  color: #284042;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Dancing Script", cursive;
 }
 .invitation__img_content {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-.invitation__img_1_item,.invitation__img_2_item {
-    transform: rotate(356.05136248103577deg);
-   border-radius: var(--rd,5px);
-    box-shadow: var(--shd,0 1px 3px rgba(0,0,0,0.2));
-    background-color: rgba(var(--brd,var(--color_15)),var(--alpha-brd,1));
-    //border-style: solid;
-    border-color: rgba(var(--brd,var(--color_15)),var(--alpha-brd,1));
-    border-width: var(--brw,2px);
-    overflow: hidden;
-    padding: 30px;
-    width: 250px;
-    height: 350px;
-    background: white;
+.invitation__img_1_item,
+.invitation__img_2_item {
+  transform: rotate(356.05136248103577deg);
+  border-radius: var(--rd, 5px);
+  box-shadow: var(--shd, 0 1px 3px rgba(0, 0, 0, 0.2));
+  background-color: rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1));
+  //border-style: solid;
+  border-color: rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1));
+  border-width: var(--brw, 2px);
+  overflow: hidden;
+  padding: 30px;
+  width: 250px;
+  height: 350px;
+  background: white;
 }
 .invitation__img_2_item {
-    transform: rotate(11.88019deg);
-    margin-top: 16px;
+  transform: rotate(11.88019deg);
+  margin-top: 16px;
 }
 .invitation_img_1,
 .invitation_img_2 {
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+.description_content {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.google__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flower__item_img {
+  height: 333px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.infotmation_content_item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.infotmation_content_item_img {
+  width: 240px;
+  height: 190px;
+}
+
+.information__title {
+  margin-left: 50px;
+  font-size: 35px;
+}
+
+.invitation__footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.footer_img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
 }
