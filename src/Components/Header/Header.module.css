@@ -28,12 +28,12 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #4676c5;
+    color: #f1c738;
 }
 
 .row_item:after {
     height: 3px;
-    background: #2658AA;
+    background: #e7bb27;
     border-radius: 70px;
     content: "";
     display: flex;
@@ -42,12 +42,12 @@
 }
 
 .row_item:hover {
-    color: #2658AA;
+    color: #e7bb27;
     transition: all 0.4s;
 
 }
 .row_item:hover::after {
-    color: #2658AA;
+    color: #e7bb27;
     width: 100%;
     margin-top: 5px;
     transition: all 0.4s;

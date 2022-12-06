@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Ballet:opsz@16..72&family=Josefin+Slab&family=PT+Serif:wght@400;700&display=swap');
+
+.home__main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // height: calc(100vh - 235px);
+}
+.home__container{
+    width: 80%;
+    padding: 40px;
+    box-shadow: var(--shd, 0 1px 3px rgba(0, 0, 0, 0.2));
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__background{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
+.carousel__content{
+    height: 600px;
+    width: 600px;
+}
+
+.wedding_img{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}

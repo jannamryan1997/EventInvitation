@@ -15,7 +15,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #4676c5;
+    color: #f1c738;
 }
 
 .social_content {
@@ -26,7 +26,7 @@
 .social_item {
     width: 35px;
     height: 35px;
-    background: #1762A2;
+    background: #f1c738;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -39,6 +39,6 @@
 }
 
 .social_item:hover {
-    background: #2658AA;
+    background: #e7bb27;
     transition: all 0.4s;
 }
