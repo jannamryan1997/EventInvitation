@@ -1,32 +1,26 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { React } from 'react';
+import { React,useCallback,useState } from 'react';
 
 import invitationimg1 from '../../Assets/Images/invitation1.jpg';
 import invitationimg2 from '../../Assets/Images/invitation2.jpg';
 import cake from '../../Assets/Images/cake.png';
 import pigeons from '../../Assets/Images/pigeons.png';
 import flower from '../../Assets/Images/flower.png';
-import footer_flower from '../../Assets/Images/footer_flowe.png';
 
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+
+import { GoogleMap,Marker } from '@react-google-maps/api';
 
 
 export function Invitation() {
 
-    const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: "AIzaSyCMexRHmXWnoX3imD7TrlXqgeuRt3l8UpU&libraries"
 
-
-    });
     const center = {
         lat: 40.7998738714596,
         lng: 43.857421875,
     };
 
     const containerStyle = {
-        width: '900px',
-        height: '300px',
-        margin: 'auto'
+       
     };
 
     return (
@@ -55,9 +49,9 @@ export function Invitation() {
                 </div>
                 <div className='google__container'>
                     <GoogleMap
-                        mapContainerStyle={containerStyle}
                         center={center}
-                        zoom={10}
+                        zoom={15}
+                        mapContainerClassName='containerStyle__google__map'
                     >
                         <></>
                         <Marker position={center} />
@@ -69,7 +63,7 @@ export function Invitation() {
                     </div>
                     <div className='infotmation_content_item animate__animated animate__fadeInLeft'>
                     <img src={cake} className="infotmation_content_item_img"/>
-                    <span className='invitatin__description information__title'>5։00 Իմպերիալ ռեստորանային համալիր</span>
+                    <span className='invitatin__description information__title'>5։00 Իմպերիալ ռեստորանում</span>
                     </div>
                 </div>
                 <div className='invitation__footer'>
