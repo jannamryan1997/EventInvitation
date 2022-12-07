@@ -66,7 +66,7 @@ export function InvitationNumberTwo() {
                         </div>
                         <div className='infotmation_content_item animate__animated animate__fadeInLeft'>
                             <img src={cake} className="infotmation_content_item_img secont__image" style={{margin:'50px 0 0 50px'}}/>
-                            <span className='invitatin__description information__title'>5։00 Իմպերիալ ռեստորանում</span>
+                            <span className='invitatin__description information__title'>5։00 Իմպերիալ ռեստորան</span>
                         </div>
                     </div>
                     <div className='line__content animate__animated animate__fadeInLeft'>

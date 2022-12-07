@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
-import { Main,Invitation} from '../../Pages/index';
+import { Main} from '../../Pages/index';
 
 export function MainRoutes() {
   return (

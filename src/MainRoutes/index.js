@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 
-import { Home,AboutUs,Invitation,Main,InvitationNumberTwo} from '../Pages/index';
+import { Home,AboutUs,Invitation,Main,InvitationNumberTwo,InvitationNumberThree} from '../Pages/index';
 
 export function MainRoutes() {
   return (
@@ -14,6 +14,7 @@ export function MainRoutes() {
        
         <Route path="/invitation" element={<Invitation />} />
         <Route path="/invitationtwo" element={<InvitationNumberTwo />} />
+        <Route path='/invitationthree' element={<InvitationNumberThree/>}/>
         </Routes>
     </BrowserRouter>
 

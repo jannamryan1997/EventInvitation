@@ -96,7 +96,7 @@ export function Invitation() {
                     </div>
                     <div className='infotmation_content_item animate__animated animate__fadeInLeft'>
                         <img src={cake} className="infotmation_content_item_img" />
-                        <span className='invitatin__description information__title'>5։00 Իմպերիալ ռեստորանում</span>
+                        <span className='invitatin__description information__title'>5։00 Իմպերիալ ռեստորան</span>
                     </div>
                 </div>
                 <div className='invitation__footer'>
