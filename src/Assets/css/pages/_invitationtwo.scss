@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Dancing+Script&display=swap");
+
+.ivitation_two_main {
+  width: 100%;
+}
+.header_img_1 {
+  margin: auto;
+  display: flex;
+}
+.title__container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.header__title {
+  color: #729da1;
+  font-size: 80px;
+  font-size: 80px;
+  font-weight: 600;
+  justify-content: center;
+  display: flex;
+  font-family: "Satisfy", cursive;
+}
+.invitatin_two__description {
+  color: #729da1;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Dancing Script", cursive;
+}
+
+.description_img_1 {
+  width: 900px;
+  object-fit: cover;
+}
+
+.invitatin__description_title {
+  font-weight: 600;
+}
+
+.invittation_footer_description {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.event__time {
+  margin-top: 50px;
+  .infotmation_content_item_img {
+    width: 170px;
+    height: 140px;
+  }
+  .information__title{
+    color: #729da1;
+    font-size: 28px;
+  }
+}
+
+.hurt__img{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    z-index: 9;
+}
+
+.line__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid #729da1;
+    width: 400px;
+    position: relative;
+    margin: 60px auto;
+}
+
+.hurt__title{
+    color: #729da1;
+    font-size: 40px;
+    font-family: "Satisfy", cursive;
+    line-height: 25px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

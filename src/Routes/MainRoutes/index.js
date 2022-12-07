@@ -8,7 +8,6 @@ export function MainRoutes() {
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/invitation" element={<Invitation />} />
         </Routes>
     </BrowserRouter>
 

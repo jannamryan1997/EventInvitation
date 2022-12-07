@@ -26,10 +26,6 @@ export function Invitation() {
         lng: 43.857421875,
     };
 
-    const containerStyle = {
-
-    };
-
     return (
         <>
             <div className="invitation__main">
