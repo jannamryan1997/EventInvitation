@@ -35,7 +35,6 @@ export function InvitationNumberTwo() {
                 <div className='line__content animate__animated animate__fadeInLeft'>
                         <img src={car} className="hurt__img"/>
                     </div>
-                    {/* <span className='hurt__title animate__animated animate__fadeInLeft'>Ara & Gohar</span> */}
                     <span className='invitatin_two__description'>Սիրով հրավիրում ենք ձեզ մասնակցելու <br />Արաի և Գոհարի
                         <br />պսակադրության արարողությանը, <br />որը տեղի կունենա  23․09․2022թ-ին ժամը 2։00-ին <br />Յոթ Վերք եկեղեցում։
                     </span>
@@ -66,7 +65,7 @@ export function InvitationNumberTwo() {
                             <span className='invitatin__description information__title'>2։00 Յոթ Վերք  եկեղեցի</span>
                         </div>
                         <div className='infotmation_content_item animate__animated animate__fadeInLeft'>
-                            <img src={cake} className="infotmation_content_item_img" style={{margin:'50px 0 0 50px'}}/>
+                            <img src={cake} className="infotmation_content_item_img secont__image" style={{margin:'50px 0 0 50px'}}/>
                             <span className='invitatin__description information__title'>5։00 Իմպերիալ ռեստորանում</span>
                         </div>
                     </div>
