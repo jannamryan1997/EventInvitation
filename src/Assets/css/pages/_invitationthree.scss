@@ -1,15 +1,17 @@
 .invitation_type_three_main{
-    width: 100%;
+    width: 50%;
+    margin: auto;
 }
 .invitation_type_three_header_img{
     object-fit: cover;
     margin: auto;
     display: flex;
+    width: 100%;
 }
 
 .invitation__type_three_carousel{
-    height: 900px;
-    width: 900px;
+   // height: 900px;
+    //width: 900px;
     display: flex;
     margin: auto;
 }
@@ -17,4 +19,99 @@
    // height: 900px;
    // width: 900px;
     object-fit: cover;
+   // width: 100%;
+}
+.invitation_type_three_img_content{
+    position: relative;
+}
+
+.invitation_type_three_img_content_title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+.img__two{
+   // margin: 450px auto 0;
+}
+
+.data__content{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+.invitatin__date__title{
+    color: #284042;
+    font-size: 40px;
+    font-weight: 600;
+    justify-content: center;
+    display: flex;
+    font-family: 'Assistant', sans-serif;
+font-family: 'Satisfy', cursive;
+}
+
+.data__content::after{
+    height: 3px;
+    width: 50%;
+    display: flex;
+    content: "";
+    background: #284042;
+    margin:10px auto;
+}
+.data__content::before{
+    height: 3px;
+    width: 50%;
+    display: flex;
+    content: "";
+    background: #284042;
+    margin:10px auto;
+}
+
+.invitation_type_three_wedding_ring_img{
+    display: flex;
+    margin: auto;
+    width: 120px;
+    height: 120%;
+}
+.map__content{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto;
+}
+.invitation_type_three_engagement{
+width: 150px;
+height: 150px;
+
+}
+.left__cotent{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.three_map__content{
+width: 100%;
+}
+
+.three_containerStyle__google__map{
+    width: 100% !important;
+}
+
+.left__content_title{
+color: #78AFB6;
+font-size: 20px;
+font-weight: 600;
+font-family: "Dancing Script", cursive;
+padding: 5px 0;
 }
