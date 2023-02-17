@@ -1,0 +1,38 @@
+.invitation__four__main{
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    .invitatin__title{
+        margin: 35px 0 0px 0;
+    }
+}
+.invitation__four__main_content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.invitation__four__main_img{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+}
+
+.description__content{
+    position: absolute;
+    top: 220px;
+}
+
+.invitation__four__ring_img{
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+}
