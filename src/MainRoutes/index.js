@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 
-import { Home,AboutUs,Invitation,Main,InvitationNumberTwo,InvitationNumberThree,InvitationNumberFour} from '../Pages/index';
+import { Home,AboutUs,Invitation,Main,InvitationNumberTwo,InvitationNumberThree,InvitationNumberFour,InvitationFive} from '../Pages/index';
 
 export function MainRoutes() {
   return (
@@ -16,6 +16,7 @@ export function MainRoutes() {
         <Route path="/invitationtwo" element={<InvitationNumberTwo />} />
         <Route path='/invitationthree' element={<InvitationNumberThree/>}/>
         <Route path='/invitationfour' element={<InvitationNumberFour/>}/>
+        <Route path='/invitationfive' element={<InvitationFive/>}/>
         </Routes>
     </BrowserRouter>
 
