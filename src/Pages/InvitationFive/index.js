@@ -26,7 +26,7 @@ export function InvitationFive() {
                 <div className="invitation__five__header__content">
                     <div className="text__content">
                         <span className="txt__title">Join us to celebrate</span>
-                        <span className="txt__span">Olivia 's 1st <br /> Birthday</span>
+                        <span className="txt__span">Tigran 's 1st <br /> Birthday</span>
                         <img src={boll} className="tubule__img__1" />
                         <img src={baby} className="img" alt="a misty forest"></img>
                         <span className="txt__title">7 February,2023 | at 4:00 PM</span>
@@ -43,6 +43,9 @@ export function InvitationFive() {
                                     <img src={gift} className="slider__item" />
                                 </div>
                             </div>
+                        </div>
+                        <div className='phone___content'>
+                        <span className="txt__title">RSVP to Anna at  +374-94-59-82-59</span>
                         </div>
                     </div>
 
