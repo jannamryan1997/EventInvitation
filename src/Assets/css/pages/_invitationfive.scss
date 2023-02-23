@@ -1,5 +1,4 @@
 .invitation__five__main {
-  border: 1px solid black;
   width: 50%;
   margin: auto;
   display: flex;
@@ -16,14 +15,14 @@
 
 .invitation__five__header__content {
   display: flex;
-  align-items: center;
-  text-align: center;
 }
 .text__content{
     display: flex;
     align-items: center;
     text-align: center; 
     flex-direction: column;
+    margin: auto;
+    width: 100%;
 }
 
 .tubule__img__1 {
@@ -42,4 +41,83 @@
     color: #744c42;
     font-size: 45px;
     font-family: 'Satisfy', cursive;
+}
+
+.img {
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid #7c554b;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#7c554b 0);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+#float {
+  position: relative;
+  -webkit-animation: floatBubble 2s infinite  normal ease-out;
+  animation: floatBubble 2s infinite  normal ease-out;
+}
+@-webkit-keyframes floatBubble {
+  0% {
+      top:50px;
+      top:50px;
+  }
+  100% {
+    top: 0px;
+    top:0px;
+  }
+}
+@keyframes floatBubble {
+  0% {
+    top:50px;
+    top:50px;
+  }
+  100% {
+    top: 0px;
+    top:0px;
+  }
+}
+.gift{
+  width: 80px;
+  height: 80px;
+  right: 0;
+  z-index: 9;
+  position: absolute;
+}
+
+.slider__content{
+  width: 100%;
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.slider__item{
+  width: 15%;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow-x: hidden;
+}
+
+.track {
+  width: 100%;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(50%); }
+  to { transform: translateX(-50%); }
 }
