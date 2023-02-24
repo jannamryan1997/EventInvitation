@@ -74,7 +74,7 @@ export function Invitation() {
                         </div>
                     </div>
                     <div className='description_content animate__animated animate__zoomIn'>
-                        <span className='invitatin__description'>Սիրով հրավիրում ենք ձեզ մասնակցելու <br />Ռադիկի և Ժաննաի
+                        <span className='invitatin__description'>Սիրով հրավիրում ենք ձեզ մասնակցելու <br />Ռադիկի և Ժաննայի
                             <br />պսակադրության արարողությանը, <br />որը տեղի կունենա  23․08․2022թ-ին ժամը 2։00-ին <br />Սուրբ Գայանե եկեղեցում։
                             <br />Հարսանյաց հանդեսը տեղի կունենա<br /> Իմպերիալ ռեստորանային համալիրում ժամը 5։00-ին։
                         </span>

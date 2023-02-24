@@ -7,9 +7,9 @@ export function MainRoutes() {
   return (
     <BrowserRouter>
      <Routes>
-      <Route path="/" element={<Main/>}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/" element={<Invitation/>}>
+          {/* <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} /> */}
         </Route>
        
         <Route path="/invitation" element={<Invitation />} />

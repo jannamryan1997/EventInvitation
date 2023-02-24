@@ -14,7 +14,7 @@ export function Home() {
 
     return (
         <>
-            <div className='home__main'>
+            {/* <div className='home__main'>
                 <div className='home__container'>
                     <img src={homebackground} className="home__background" />
                     <div className='carousel__content'>
@@ -40,7 +40,7 @@ export function Home() {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
         </>
     )
 }
