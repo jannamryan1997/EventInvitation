@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { React } from 'react';
+import { React, useEffect } from 'react';
 
 import { GoogleMap, Marker } from '@react-google-maps/api';
 import { Carousel } from 'react-responsive-carousel';
@@ -26,6 +26,28 @@ export function Invitation() {
         lng: 43.857421875,
     };
 
+    const elements = [
+        {
+            class: 'animate__fadeInLeft',
+            id: 'img_one'
+        },
+        {
+            class: 'animate__fadeInRight',
+            id:'main_carousel'
+        }
+    ]
+
+    useEffect(() => {
+        for (let item of elements) {
+            const element = document.getElementById(item.id);
+            const observer = new IntersectionObserver(entries => {
+                element.classList.toggle(item.class, entries[0].isIntersecting);
+            });
+            observer.observe(element);
+        }
+
+    }, [])
+
     return (
         <>
             <div className="invitation__main">
@@ -41,18 +63,18 @@ export function Invitation() {
                                     showThumbs={false}
                                 >
                                     <div>
-                                        <img src={invitationimg1} className='invitation_img_1'/>
+                                        <img src={invitationimg1} className='invitation_img_1' />
                                     </div>
                                     <div>
-                                        <img src={invitationimg3} className='invitation_img_1'/>
+                                        <img src={invitationimg3} className='invitation_img_1' />
                                     </div>
                                     <div>
-                                        <img src={invitationimg5} className='invitation_img_1'/>
+                                        <img src={invitationimg5} className='invitation_img_1' />
                                     </div>
                                 </Carousel>
                             </div>
                         </div>
-                        <div className='invitation__img_transition animate__animated animate__fadeInRight'>
+                        <div className='invitation__img_transition animate__animated animate__fadeInRight' id='main_carousel'>
                             <div className='invitation__img_2_item'>
                                 <Carousel
                                     autoPlay={true}
@@ -61,13 +83,13 @@ export function Invitation() {
                                     showThumbs={false}
                                 >
                                     <div>
-                                        <img src={invitationimg2} className='invitation_img_2'/>
+                                        <img src={invitationimg2} className='invitation_img_2' />
                                     </div>
                                     <div>
-                                        <img src={invitationimg4} className='invitation_img_2'/>
+                                        <img src={invitationimg4} className='invitation_img_2' />
                                     </div>
                                     <div>
-                                        <img src={invitationimg6} className='invitation_img_2'/>
+                                        <img src={invitationimg6} className='invitation_img_2' />
                                     </div>
                                 </Carousel>
                             </div>
@@ -90,7 +112,7 @@ export function Invitation() {
                         <Marker position={center} />
                     </GoogleMap>
                     <img src={flower} className="flower__item_img" />
-                    <div className='infotmation_content_item animate__animated animate__fadeInLeft'>
+                    <div className='infotmation_content_item animate__animated animate__fadeInLeft' id="img_one">
                         <img src={pigeons} className="infotmation_content_item_img" />
                         <span className='invitatin__description information__title'>2։00 Սուրբ Գայանե եկեղեցի</span>
                     </div>
