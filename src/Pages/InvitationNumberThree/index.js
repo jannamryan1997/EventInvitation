@@ -25,6 +25,47 @@ export function InvitationNumberThree() {
     };
 
 
+    const elements = [
+        {
+            class: 'animate__zoomIn',
+            id: 'invitatin__title'
+        },
+        {
+            class:'animate__fadeInRight', 
+            id:'data__content',
+        },
+        {
+            class:'animate__fadeInLeft',
+            id:'line__content_one',
+        },
+        {
+            class:'animate__fadeInLeft',
+             id:'left__cotent'
+        },
+        {
+            class:'animate__fadeInLeft',
+            id:'line__content_two'
+        },
+        {
+            class:'animate__backInRight',
+             id:'invitatin_two__description'
+        },
+        {
+            class:'animate__fadeInRight', 
+            id:'ring_img'
+        }
+    ]
+
+    useEffect(() => {
+        for (let item of elements) {
+            const element = document.getElementById(item.id);
+            const observer = new IntersectionObserver(entries => {
+                element.classList.toggle(item.class, entries[0].isIntersecting);
+            });
+            observer.observe(element);
+        }
+
+    }, []);
 
     return (
         <>
@@ -39,50 +80,50 @@ export function InvitationNumberThree() {
                     >
                         <div className='invitation_type_three_img_content'>
                             <img src={invitationimg1} className='invitation__type_img_1' />
-                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title'>
+                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title' id='invitatin__title'>
                                 Engagement Ceremony <br />of
                                 <br />
                                 Radik & Zhanna</span>
                         </div>
                         <div>
                             <img src={invitationimg3} className='invitation__type_img_1' />
-                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title'>
+                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title' id='invitatin__title'>
                                 Engagement Ceremony <br />of
                                 <br />
                                 Radik & Zhanna</span>
                         </div>
                         <div>
                             <img src={invitationimg5} className='invitation__type_img_1' />
-                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title'>
+                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title' id='invitatin__title'>
                                 Engagement Ceremony <br />of
                                 <br />
                                 Radik & Zhanna</span>
                         </div>
                         <div>
                             <img src={invitationimg2} className='invitation__type_img_1' />
-                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title'>
+                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title' id='invitatin__title'>
                                 Engagement Ceremony <br />of
                                 <br />
                                 Radik & Zhanna</span>
                         </div>
                         <div>
                             <img src={invitationimg4} className='invitation__type_img_1' />
-                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title'>
+                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title' id='invitatin__title'>
                                 Engagement Ceremony <br />of
                                 <br />
                                 Radik & Zhanna</span>
                         </div>
                         <div>
                             <img src={invitationimg6} className='invitation__type_img_1' />
-                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title'>
+                            <span className='animate__animated animate__zoomIn invitatin__title invitation_type_three_img_content_title' id='invitatin__title'>
                                 Engagement Ceremony <br />of
                                 <br />
                                 Radik & Zhanna</span>
                         </div>
                     </Carousel>
                 </div>
-                <img src={headerImage2} className='invitation_type_three_header_img img__two' />
-                <div className='data__content animate__animated animate__backInLeft'>
+                <img src={headerImage2} className='invitation_type_three_header_img img__two animate__animated animate__backInLeft' />
+                <div className='data__content animate__animated animate__fadeInRight' id='data__content'>
                     <div className='card__item_1'>
                         <span className='invitatin__date__title after__content'>
                             08 March 2021
@@ -93,14 +134,14 @@ export function InvitationNumberThree() {
 
                     </div>
                 </div>
-                <img src={ring} className='invitation_type_three_wedding_ring_img animate__animated animate__backInLeft' />
+                <img src={ring} className='invitation_type_three_wedding_ring_img animate__animated animate__fadeInRight' id='ring_img'/>
                 <div className='description_content animate__animated animate__zoomIn'>
-                    <div className='line__content animate__animated animate__fadeInLeft' style={{ color: '#78AFB6' }}>
+                    <div className='line__content animate__animated animate__fadeInLeft' id='line__content_one' style={{ color: '#78AFB6' }}>
                         <img src={restaurant} className="hurt__img" />
                     </div>
-                    <span className='invitatin_two__description' style={{ color: '#78AFB6' }}>Tigran Mets Restaurant Complex
+                    <span className='invitatin_two__description animate__animated animate__fadeInRight' id='invitatin_two__description' style={{ color: '#78AFB6' }}>Tigran Mets Restaurant Complex
                     </span>
-                    <div className='line__content animate__animated animate__fadeInLeft' style={{ color: '#78AFB6' }}>
+                    <div className='line__content animate__animated animate__fadeInLeft' id='line__content_two' style={{ color: '#78AFB6' }}>
                         <img src={restaurant} className="hurt__img" />
                     </div>
                 </div>
@@ -113,7 +154,7 @@ export function InvitationNumberThree() {
                         <></>
                         <Marker position={center} />
                     </GoogleMap>
-                    <div className='left__cotent'>
+                    <div className='left__cotent animate__animated animate__fadeInLeft' id='left__cotent'>
                         <img src={engagement} className='invitation_type_three_engagement' />
                         <span className='left__content_title'>I Said Yes...</span>
                     </div>

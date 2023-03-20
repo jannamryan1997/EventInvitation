@@ -32,8 +32,28 @@ export function Invitation() {
             id: 'img_one'
         },
         {
+            class: 'animate__fadeInLeft',
+            id:'img_two'
+        },
+        {
             class: 'animate__fadeInRight',
             id:'main_carousel'
+        },
+        {
+            class: 'animate__fadeInLeft' ,
+            id:'main_carousel_one',
+        },
+        {
+            class:'animate__zoomIn',
+            id:'description_content'
+        },
+        {
+            class:'animate__zoomIn',
+            id:'invitatin__title'
+        },
+        {
+            class:'animate__fadeInRight',
+            id:'invitation__footer_title'
         }
     ]
 
@@ -46,15 +66,15 @@ export function Invitation() {
             observer.observe(element);
         }
 
-    }, [])
+    }, []);
 
     return (
         <>
             <div className="invitation__main">
                 <div className='invitation__main__content'>
-                    <span className='animate__animated animate__zoomIn invitatin__title'>Radik & Zhanna</span>
+                    <span className='animate__animated animate__zoomIn invitatin__title' id="invitatin__title">Radik & Zhanna</span>
                     <div className='invitation__img_content'>
-                        <div className='invitation__img_transition animate__animated animate__fadeInLeft'>
+                        <div className='invitation__img_transition animate__animated animate__fadeInLeft' id='main_carousel_one'>
                             <div className='invitation__img_1_item'>
                                 <Carousel
                                     autoPlay={true}
@@ -95,7 +115,7 @@ export function Invitation() {
                             </div>
                         </div>
                     </div>
-                    <div className='description_content animate__animated animate__zoomIn'>
+                    <div className='description_content animate__animated animate__zoomIn' id="description_content">
                         <span className='invitatin__description'>Սիրով հրավիրում ենք ձեզ մասնակցելու <br />Ռադիկի և Ժաննայի
                             <br />պսակադրության արարողությանը, <br />որը տեղի կունենա  23․08․2022թ-ին ժամը 2։00-ին <br />Սուրբ Գայանե եկեղեցում։
                             <br />Հարսանյաց հանդեսը տեղի կունենա<br /> Իմպերիալ ռեստորանային համալիրում ժամը 5։00-ին։
@@ -116,14 +136,13 @@ export function Invitation() {
                         <img src={pigeons} className="infotmation_content_item_img" />
                         <span className='invitatin__description information__title'>2։00 Սուրբ Գայանե եկեղեցի</span>
                     </div>
-                    <div className='infotmation_content_item animate__animated animate__fadeInLeft'>
+                    <div className='infotmation_content_item animate__animated animate__fadeInLeft' id="img_two">
                         <img src={cake} className="infotmation_content_item_img" />
                         <span className='invitatin__description information__title'>5։00 Իմպերիալ ռեստորան</span>
                     </div>
                 </div>
-                <div className='invitation__footer'>
+                <div className='invitation__footer animate__animated animate__fadeInRight' id="invitation__footer_title">
                     <span className='invitatin__description information__title'>Հարգանքներով՝ Ռադիկ և Ժաննա</span>
-
                 </div>
                 <div className='invitation__footer'>
                     <img src={flower} className="footer_img" />
