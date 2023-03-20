@@ -20,7 +20,7 @@ export function InvitationNumberTwo() {
 
     const elements = [
         {
-            class: 'animate__fadeInDown',
+            class: 'animate__fadeInRight',
             id: 'ivitation_two_header'
         },
         {
@@ -97,7 +97,7 @@ export function InvitationNumberTwo() {
     return (
         <>
             <div className='ivitation_two_main'>
-                <div className='ivitation_two_header animate__animated  animate__fadeInDown' id='ivitation_two_header'>
+                <div className='ivitation_two_header animate__animated  animate__fadeInRight' id='ivitation_two_header'>
                     <img className='header_img_1' src={headerImage} />
                     <div className='title__container'>
                         <span className="header__title animate__animated animate__fadeInLeft" id='header__title_one'>A</span>
